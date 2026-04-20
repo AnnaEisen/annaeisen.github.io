@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Film Resume — Anna Eisen</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #111;
+    --white: #FAFAFA;
+    --gray-100: #F3F3F3;
+    --gray-200: #E5E5E5;
+    --gray-400: #999;
+    --gray-600: #666;
+    --gray-800: #333;
+    --accent: #345C00;
+    --font-sans: 'DM Sans', -apple-system, sans-serif;
+    --font-serif: 'Source Serif 4', 'Georgia', serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV — same as index */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250,250,250,0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--gray-200);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 2.5rem;
+  }
+  nav .name {
+    font-weight: 700; font-size: 1.05rem; letter-spacing: -0.02em;
+    color: var(--black); text-decoration: none;
+  }
+  nav .name span { font-weight: 400; color: var(--gray-600); margin-left: 0.4rem; }
+  nav ul { list-style: none; display: flex; gap: 2rem; }
+  nav ul a {
+    text-decoration: none; font-size: 0.88rem; font-weight: 500;
+    color: var(--gray-600); transition: color 0.2s;
+  }
+  nav ul a:hover { color: var(--black); }
+  nav ul a.active { color: var(--black); }
+
+  @media (max-width: 600px) {
+    nav { padding: 1rem 1.2rem; }
+    nav ul { gap: 1.2rem; }
+  }
+
+  /* MAIN CONTENT */
+  .resume {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 8rem 2.5rem 6rem;
+  }
+
+  .resume h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .resume .contact {
+    margin-top: 0.6rem;
+    font-size: 0.92rem;
+    color: var(--gray-600);
+  }
+  .resume .contact a { color: var(--accent); text-decoration: none; }
+  .resume .contact a:hover { text-decoration: underline; }
+
+  /* SECTIONS */
+  .resume-section {
+    margin-top: 3rem;
+  }
+
+  .resume-section h2 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: 1.2rem;
+  }
+
+  .resume-item {
+    margin-bottom: 1.4rem;
+  }
+  .resume-item:last-child { margin-bottom: 0; }
+
+  .resume-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-serif);
+    line-height: 1.4;
+  }
+  .resume-item .meta {
+    font-size: 0.85rem;
+    color: var(--gray-400);
+    margin-top: 0.15rem;
+  }
+  .resume-item p {
+    font-size: 0.92rem;
+    color: var(--gray-600);
+    margin-top: 0.3rem;
+    line-height: 1.65;
+  }
+
+  .simple-item {
+    font-size: 0.92rem;
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--gray-200);
+    font-size: 0.82rem;
+    color: var(--gray-400);
+  }
+  footer a { color: var(--gray-600); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .resume { padding: 7rem 1.2rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="name">Anna Eisen <span>Film</span></a>
+  <ul>
+    <li><a href="index.html">Portfolio</a></li>
+    <li><a href="resume.html" class="active">Resume</a></li>
+  </ul>
+</nav>
+
+<main class="resume">
+
+  <h1>Anna Callista Eisen</h1>
+  <p class="contact"><a href="mailto:theannaeisen@gmail.com">theannaeisen@gmail.com</a></p>
+
+  <!-- EDUCATION -->
+  <section class="resume-section">
+    <h2>Education</h2>
+    <div class="simple-item">Berkeley High School, Class of 2023</div>
+    <div class="simple-item">Black Pine Circle Middle School, Class of 2019</div>
+  </section>
+
+  <!-- FILM EDUCATION -->
+  <section class="resume-section">
+    <h2>Film Education</h2>
+    <div class="simple-item">Berkeley High School IB HL Film (Amanda Marini), 2021–2023</div>
+    <div class="simple-item">Berkeley Repertory Theater Summer Film Intensive, 2022</div>
+    <div class="simple-item">California Film Institute, Documentary Filmmaking, 2022</div>
+  </section>
+
+  <!-- FILMS -->
+  <section class="resume-section">
+    <h2>Films</h2>
+
+    <div class="resume-item">
+      <h3>Look the Other Way</h3>
+      <div class="meta">3 minutes — November 2022 — Berkeley High School IB HL Film</div>
+      <p>Director / Writer / Editor / Director of Photography / Production Design. A short film about a girl trying to hide from a hoard of zombies who attempts to get the attention of someone listening to music and alert them to the danger of the undead.</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>Dining In</h3>
+      <div class="meta">3 minutes — September 2022 — Berkeley High School IB HL Film</div>
+      <p>Director / Writer / Editor / Director of Photography / Production Design. Short montage film where someone does their dishes to a disco tune.</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>Talking Some Trash</h3>
+      <div class="meta">4 minutes — August 2022 — California Film Institute</div>
+      <p>Director / Editor / Producer. Documentary about waste management in the town of San Rafael, and how politicians are looking at sustainability policies.</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>Penance</h3>
+      <div class="meta">8 minutes — July 2022 — Berkeley Repertory Theater Summer Film Intensive</div>
+      <p>Director of Photography. A dark comedy film about a young girl who forms a strange friendship with her polar opposite at the church where she goes to mourn her younger sister.</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>The Producer's Office</h3>
+      <div class="meta">9 minutes — June 2022 — Berkeley High School IB SL Film</div>
+      <p>Director / Writer / Editor / Director of Photography / Production Design. A postmodernist short film about a desperate director who tries to pitch her movie to a producer, who keeps suggesting wild ideas that the director had trouble trying to recreate.</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>November</h3>
+      <div class="meta">5 minutes — February 2022 — Berkeley High School IB SL Film</div>
+      <p>Director / Writer / Editor / Director of Photography / Production Design. A neo-noir based on <em>Bonnie and Clyde</em> (1967) about a lone bank robber whose heist goes wrong.</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>12</h3>
+      <div class="meta">2 minutes — November 2021 — Berkeley High School IB SL Film</div>
+      <p>Director / Writer / Editor / Director of Photography / Production Design. A short film about a girl's time-jumping journey through her neighborhood to try and be on time for a meeting.</p>
+    </div>
+
+    <div class="resume-item">
+      <h3>Laundry List</h3>
+      <div class="meta">4 minutes — September 2021 — Berkeley High School IB SL Film</div>
+      <p>Director / Writer / Editor / Director of Photography / Production Design. A short film about a young girl who discovers that her bedside lamp can change the time of day.</p>
+    </div>
+  </section>
+
+  <!-- THEATER -->
+  <section class="resume-section">
+    <h2>Featured Theater &amp; Musical Acting</h2>
+
+    <div class="resume-item">
+      <h3>Two Gentlemen of Verona <span style="font-weight:400; color: var(--gray-400);">— Proteus</span></h3>
+      <div class="meta">2022 — California Shakespeare Theater — Directed by Solange Schumacher</div>
+    </div>
+
+    <div class="resume-item">
+      <h3>Big <span style="font-weight:400; color: var(--gray-400);">— Science Homework Kid / Ensemble</span></h3>
+      <div class="meta">2019 — Berkeley Playhouse Mainstage, professional production — Directed by Ryan Weible</div>
+    </div>
+
+    <div class="resume-item">
+      <h3>Richard III <span style="font-weight:400; color: var(--gray-400);">— Richard</span></h3>
+      <div class="meta">2018 — California Shakespeare Theater — Directed by Wendy Wisely</div>
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section class="resume-section">
+    <h2>Acting Training</h2>
+    <p style="font-size: 0.92rem; color: var(--gray-600); line-height: 1.7;">Monologues, scene work, and on-camera acting at American Conservatory Theater, Berkeley Repertory Theater, and Contra Costa Civic Theater. Jazz, ballet, and modern dance at Shawl Anderson Dance Studio and Berkeley Playhouse with Joe Ayers. Competed three times at the Junior Theater Festival West, and Australia. Sang with Piedmont East Bay Children's Choir 2014–2016 and 6 years of vocal training with Lisa Woo and Rachel Robinson.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="resume-section">
+    <h2>Acting Skills</h2>
+    <p style="font-size: 0.92rem; color: var(--gray-600); line-height: 1.7;">Proficiency in Spanish, and a decent grasp of Southern, Northern Irish, and English (Northern and aristocratic) accents. Can do an amazing impression of the host of Great British Bake Off.</p>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="resume-section">
+    <h2>Acting Awards</h2>
+    <div class="resume-item">
+      <h3>Outstanding Achievement in Music</h3>
+      <div class="meta">Junior Theater Festival West 2019 (group award)</div>
+    </div>
+    <div class="resume-item">
+      <h3>Excellence in Ensemble Work</h3>
+      <div class="meta">Junior Theater Festival West 2020 (group award)</div>
+    </div>
+    <div class="resume-item">
+      <h3>Outstanding Acting</h3>
+      <div class="meta">Junior Theater Festival Australia 2020 (group award)</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Anna Eisen — <a href="mailto:theannaeisen@gmail.com">theannaeisen@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
